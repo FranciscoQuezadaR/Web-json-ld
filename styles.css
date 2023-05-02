@@ -1,0 +1,5 @@
+div#integrantes > div { display: none; }
+#Luis:checked~ div#Luis { display: block; }
+#Francisco:checked~ div#Francisco { display: block; }
+#Ivan:checked~ div#Ivan { display: block; }
+#Arturo:checked~ div#Arturo { display: block; }

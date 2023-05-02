@@ -1,36 +1,252 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="Implementación del meta ">
-		<title> Proyecto LD </title>
-	</head>
-	<body>
-		<center>
-			<H1> Proyecto LD </H1>
-		</center>
-		<HR width = "80%" size = "7" noshade color = "green">
-		<P>
-			<h4> Integrantes </h4>
-		</P>
-		<P align = "center">
-			<UL>	
-				<LI> <A HREF=""> Luis Batres </A>
-				<LI> <A HREF=""> Francisco Quezada </b> Molina </A>
-				<LI> <A HREF=""> Ivan </A>
-				<LI> <A HREF=""> Arturo Tejeda </A>
-			</UL>
-		</P>
-		<P>
-			<h3> <A> [GRAFO] </A> </h3>
-		</P>
-		<P>
-			......:
-			<br>
-			<OL>	
-				<LI> <A HREF=""> Person </A>
-				<LI> <A HREF=""> Event </A>
-				<LI> <A HREF=""> Parse </A>
-			</OL>
-		</p>
-	</body> 
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Implementación del meta ">
+	<link href="styles.css" rel="stylesheet">
+	<title> Proyecto LD </title>
+</head>
+
+<body>
+	<center>
+		<H1> Proyecto LD </H1>
+	</center>
+	<HR width="80%" size="7" noshade color="green">
+	<P>
+	<h4> Integrantes </h4>
+	</P>
+	<div id="integrantes">
+
+		<input type="radio" name="integrantes" id="Luis" />Luis Batres <br>
+		<input type="radio" name="integrantes" id="Francisco" />Francisco Quezada <br>
+		<input type="radio" name="integrantes" id="Ivan" />Ivan <br>
+		<input type="radio" name="integrantes" id="Arturo" />Arturo Tejeda <br>
+
+
+		<div id="Luis">
+			<div id="visualized" style="background: white">
+				<svg width="800" height="600">
+					<g transform="translate(250,0)">
+						<path class="link" d="M0,300C125,300 125,60 250,60"></path>
+						<path class="link" d="M0,300C125,300 125,180 250,180">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,300 250,300"></path>
+						<path class="link" d="M0,300C125,300 125,420 250,420">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,540 250,540"></path>
+						<g class="node" transform="translate(250,540)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">url:
+								http://www.Luis.com</text>
+						</g>
+						<g class="node" transform="translate(250,420)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">telephone: 871 735
+								6305</text>
+						</g>
+						<g class="node" transform="translate(250,300)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">Rol:
+								Programador</text>
+						</g>
+						<g class="node" transform="translate(250,180)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">name: Luis
+								Batres</text>
+						</g>
+						<g class="node" transform="translate(250,60)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">@type:
+								Person</text>
+						</g>
+						<g class="node" transform="translate(0,300)">
+							<circle r="7.5"
+								style="stroke-width: 2px; stroke: rgb(247, 202, 24); fill: rgb(255, 255, 255);">
+							</circle><text x="-12.5" dy="4" text-anchor="end" style="fill-opacity: 1;">_1025477</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+
+		<div id="Francisco">
+			<div id="visualized" style="background: white">
+				<svg width="800" height="600">
+					<g transform="translate(250,0)">
+						<path class="link" d="M0,300C125,300 125,60 250,60"></path>
+						<path class="link" d="M0,300C125,300 125,180 250,180">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,300 250,300"></path>
+						<path class="link" d="M0,300C125,300 125,420 250,420">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,540 250,540"></path>
+						<g class="node" transform="translate(250,540)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">url:
+								http://www.Francisco.com</text>
+						</g>
+						<g class="node" transform="translate(250,420)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">telephone: 872 130
+								9369</text>
+						</g>
+						<g class="node" transform="translate(250,300)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">Rol:
+								Programador</text>
+						</g>
+						<g class="node" transform="translate(250,180)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">name: Francisco
+								Quezada</text>
+						</g>
+						<g class="node" transform="translate(250,60)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">@type:
+								Person</text>
+						</g>
+						<g class="node" transform="translate(0,300)">
+							<circle r="7.5"
+								style="stroke-width: 2px; stroke: rgb(247, 202, 24); fill: rgb(255, 255, 255);">
+							</circle><text x="-12.5" dy="4" text-anchor="end" style="fill-opacity: 1;">_1025477</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+
+		<div id="Ivan">
+			<div id="visualized" style="background: white">
+				<svg width="800" height="600">
+					<g transform="translate(250,0)">
+						<path class="link" d="M0,300C125,300 125,60 250,60"></path>
+						<path class="link" d="M0,300C125,300 125,180 250,180">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,300 250,300"></path>
+						<path class="link" d="M0,300C125,300 125,420 250,420">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,540 250,540"></path>
+						<g class="node" transform="translate(250,540)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">url:
+								http://www.Ivan.com</text>
+						</g>
+						<g class="node" transform="translate(250,420)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">telephone: 871 404
+								6622</text>
+						</g>
+						<g class="node" transform="translate(250,300)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">Rol:
+								Programador</text>
+						</g>
+						<g class="node" transform="translate(250,180)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">name: Ivan</text>
+						</g>
+						<g class="node" transform="translate(250,60)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">@type:
+								Person</text>
+						</g>
+						<g class="node" transform="translate(0,300)">
+							<circle r="7.5"
+								style="stroke-width: 2px; stroke: rgb(247, 202, 24); fill: rgb(255, 255, 255);">
+							</circle><text x="-12.5" dy="4" text-anchor="end" style="fill-opacity: 1;">_1025477</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+
+		<div id="Arturo">
+			<div id="visualized" style="background: white">
+				<svg width="800" height="600">
+					<g transform="translate(250,0)">
+						<path class="link" d="M0,300C125,300 125,60 250,60"></path>
+						<path class="link" d="M0,300C125,300 125,180 250,180">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,300 250,300"></path>
+						<path class="link" d="M0,300C125,300 125,420 250,420">
+
+						</path>
+						<path class="link" d="M0,300C125,300 125,540 250,540"></path>
+						<g class="node" transform="translate(250,540)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">url:
+								http://www.Arturo.com</text>
+						</g>
+						<g class="node" transform="translate(250,420)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">telephone:
+								8713455437</text>
+						</g>
+						<g class="node" transform="translate(250,300)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">Rol:
+								Programador</text>
+						</g>
+						<g class="node" transform="translate(250,180)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">name: Arturo
+								Tejeda</text>
+						</g>
+						<g class="node" transform="translate(250,60)">
+							<circle r="5"
+								style="stroke-width: 1px; stroke: rgb(78, 205, 196); fill: rgb(255, 255, 255);">
+							</circle><text x="10" dy="4" text-anchor="start" style="fill-opacity: 1;">@type:
+								Person</text>
+						</g>
+						<g class="node" transform="translate(0,300)">
+							<circle r="7.5"
+								style="stroke-width: 2px; stroke: rgb(247, 202, 24); fill: rgb(255, 255, 255);">
+							</circle><text x="-12.5" dy="4" text-anchor="end" style="fill-opacity: 1;">_20130781</text>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<P>
+		......:
+		<br>
+	<OL>
+		<LI> <A HREF=""> Person </A>
+		<LI> <A HREF=""> Event </A>
+		<LI> <A HREF=""> Parse </A>
+	</OL>
+	</p>
+</body>
+
 </html>
