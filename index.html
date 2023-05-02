@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina web JSON-LD</title>
+  
+  <!--<script src="jsonld.js-main/lib/jsonld.js"></script>-->
+  <script>const jsonld = require('jsonld');</script>
+  
+  <script>
+  // Descripcion de los datos de las personas en formato JSON-LD
+  var personas = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Luis Batres",
+      "jobTitle": "Developer",
+      "telephone": "(871) 735-6305",
+      "gender": "Male",
+      "email": "alu.20130806@correo.itlalaguna.edu.mx"
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Francisco Quezada",
+      "jobTitle": "Developer",
+      "gender": "Male",
+      "email": "alu.20130815@correo.itlalaguna.edu.mx"
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Arturo Tejeda",
+      "jobTitle": "Developer",
+      "gender": "Male",
+      "email": "alu.20130781@correo.itlalaguna.edu.mx"
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Ivan Gallegos",
+      "jobTitle": "Student",
+      "gender": "Mixed",
+      "email": "person@example.com"
+    }
+  ];
+
+  // Convertir los datos de las personas a JSON-LD
+  var json_ld = JSON.stringify(personas);
+
+  // Analizar y mostrar los datos en la página
+  document.addEventListener("DOMContentLoaded", function() {
+    json_ld.expand(JSON.parse(json_ld)).then(function(expanded) {//No funciona el metodo expand
+
+      /*La línea de código document.getElementById("jsonld").textContent = JSON.stringify(expanded, null, 2); 
+      se encarga de asignar el contenido de texto al elemento con el ID "jsonld".*/
+      document.getElementById("jsonld").textContent = JSON.stringify(expanded, null, 2);
+
+      /*JSON.stringify(expanded, null, 2) convierte el objeto expanded en una representación legible 
+      en forma de cadena con indentación de dos espacios. 
+      Luego, el contenido de texto resultante se asigna a textContent del elemento <pre>, 
+      lo que muestra los datos JSON-LD analizados en la página.*/
+    }).catch(function(err) {
+      //Atrapar errores
+      console.error(err);
+    });
+  });
+</script>
+
+</head>
+
+<body>
+    
+    <h1>Pagina web con JSON-LD</h1>
+
+    <!--Para mostrar texto preformateado. En este caso, hemos asignado el ID "jsonld" a la etiqueta <pre>. 
+      Luego, en el script JavaScript, utilizamos document.getElementById("jsonld") 
+      para obtener una referencia a esa etiqueta en el DOM.-->
+    <pre id="jsonld"></pre>
+
+</body>
+
+</html>
